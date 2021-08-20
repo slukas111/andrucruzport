@@ -1,0 +1,171 @@
+@charset "utf-8";
+
+/*
+   
+   Author:Andru Cruz   
+   Date:8/10/2021     
+   
+   Filename: ac_styles.css
+
+   
+*/
+/*page layout styles*/
+html {
+  background-image: url('head_img.png');
+}
+header{
+ font-size: 1em;
+   font-family: sans-serif;
+   font-weight: bold;
+    height: auto;
+    display: auto;
+}
+
+.page-wrap {
+    border: 7px solid rgba(0, 146, 255, 1);
+    height: auto;
+    display: auto;
+  }
+  
+  aside {
+    background: rgba(69, 69, 255, 1);
+    padding: 8px;
+    flex: 1 1 0;
+  }
+
+  body {
+    padding: 20px;
+     -webkit-flex: 5 1 0px;
+    flex: 5 1 0;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    contain: content;
+  }
+
+  p:nth-child(1){
+    
+    background: rgba(0, 146, 255, 1);
+   
+  }
+  p:nth-child(2){
+    
+   background: rgba(0, 146, 255, 1);
+  
+ }
+ 
+  /*body styles*/
+  p.head {
+     font-size: 2em;
+     float: left;
+     text-align: left;
+  }
+  p.about {
+     float: left;
+  }
+
+  section {
+    padding: 20px 10px;
+    flex: 2 1 auto;
+  }
+ /* Navigation list styles */
+
+ nav ul {
+   list-style-type: none;
+   font-size: 1.3em;
+   font-family: sans-serif;
+   font-weight: bold;
+   padding: 8px;
+} 
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgba(18, 255, 255, 1);
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  padding: 8px;
+}
+
+/*video page styles*/
+
+.video {
+  margin: 10px;
+  border: 5px solid rgb(89, 0, 255);
+  box-shadow: rgba(8, 136, 241, 0.993) 1px 1px 15px;
+   margin: 0 0 0 15px;
+}
+/* ============================================
+	Mobile Devices: 0 - 480 pixels
+   ============================================
+*/
+@media only screen and (max-width: 480px) {
+  .video {
+  margin: 10px;
+  border: 5px solid rgb(89, 0, 255);
+  box-shadow: rgba(8, 136, 241, 0.993) 1px 1px 15px;
+}
+   nav.horizontal ul {
+    display: -webkit-flex;
+    display:flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    height: 40px;
+ 
+  } 
+ 
+  nav.horizontal ul > li {
+    	 display: block; 
+       flex-grow:1;
+    -webkit-flex-grow: 1;
+    flex-shrink: 1 ;
+    -webkit-flex-shrink: 1;
+    flex-basis: auto;
+    -webkit-flex-basis: auto;
+    }  
+}
+
+/* ===================================================
+	Tablet and Desktop Devices: Greater than 480 pixels
+   ===================================================
+*/
+
+@media screen and (min-width: 481px) {
+  .video {
+  margin: 10px;
+  border: 5px solid rgb(89, 0, 255);
+  box-shadow: rgba(8, 136, 241, 0.993) 1px 1px 15px;
+}
+
+   nav.horizontal ul {
+    display: -webkit-flex;
+    display:flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    height: 40px;
+ 
+  } 
+ 
+  nav.horizontal ul > li {
+    	 display: block; 
+       flex-grow:1;
+    -webkit-flex-grow: 1;
+    flex-shrink: 1 ;
+    -webkit-flex-shrink: 1;
+    flex-basis: auto;
+    -webkit-flex-basis: auto;
+    }  
+}
